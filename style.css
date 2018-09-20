@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contact
+{
+    display: flex;
+
+    margin-top: 62px;
+
+    justify-content: center;
+}
+
+.titles h4
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 43px;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #a5a5a5;
+}
+
+.titles h1
+{
+    font-size: 60px;
+    font-weight: lighter;
+
+    margin-top: 31px;
+
+    color: #4c4c4c;
+}
+
+.titles h1 u
+{
+    text-decoration: none;
+
+    color: #1abc9c;
+}
+
+.titles h1,
+.titles h4
+{
+    text-align: center;
+}
+
+/* Form */
+
+.form-container
+{
+	display: flex;
+	justify-content: space-between;
+    margin: 85px 120px 0;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 625px;
+    height: 470px;
+
+    justify-content: space-between;
+}
+
+.row-inputs
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.row-inputs input:first-child
+{
+    margin-right: 30px;
+}
+
+input
+{
+	width: 100%;
+    height: 50px;
+}
+
+input[type='Submit']
+{
+    width: 183px;
+    margin-top: 35px;
+
+    color: #fff;
+    border: none;
+    background-color: #1abc9c;
+}
+
+input[type='Submit']:hover
+{
+    opacity: 0.9;
+}
+
+textarea
+{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+input,
+textarea
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+#googleMap {
+	width: 467px;
+	height: 467px;
+	border: 1px solid #ccc;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-left: 45px;
+}
+
+.details
+{
+    display: flex;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    min-height: 223px;
+    margin-top: 57px;
+    padding: 50px 0;
+
+    background-color: #f7f7f7;
+
+    justify-content: center;
+}
+
+.details-item
+{
+    display: flex;
+    flex-direction: column;
+
+    min-width: 390px;
+    height: 123px;
+
+    text-align: center;
+
+    border-right: 1px solid #818181;
+
+    justify-content: space-around;
+}
+
+
+.details-item:last-child
+{
+    border: none;
+}
+
+.details-item h4
+{
+    line-height: 0;
+
+    text-transform: uppercase;
+}
+
+.details-item p
+{
+    font-size: 18px;
+    line-height: 0;
+}
+
+.details-item:first-child p,
+.details-item:last-child p
+{
+    color: #1abc9c;
+}
+
+.bottom
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 160px;
+    padding: 47px 0 53px 105px;
+
+    color: #fff;
+    background-color: #1abc9c;
+}
+
+.bottom h1
+{
+    font-size: 46px;
+    font-weight: 100;
+    line-height: 0;
+
+    text-transform: uppercase;
+}
+
+.bottom p
+{
+    font-weight: lighter;
+}
+
+.bottom h1 u
+{
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* Media Queries*/
+
+@media screen and ( max-width: 1200px )  {
+	.form-container
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	    margin: 85px 120px 0;
+	}
+
+	#googleMap 
+	{
+		width: 100%;
+		height: 400px;
+		margin-top: 70px;
+		margin-left: 0;
+	}
+
+	form
+	{
+	    width: 100%;
+	}
+
+	input[type='Submit']
+	{
+	    width: 100%;
+	}
+
+	textarea
+	{
+	    width: 100%;
+	}
+
+	.details-item
+	{
+	    min-width: 320px;
+
+	    justify-content: space-around;
+	}
+}
+
+/* For devices less than 992px*/
+
+@media screen and ( max-width: 992px )  {
+	.details-item
+	{
+	    min-width: 270px;
+	}
+
+	.bottom 
+	{
+		height: 100%;
+		padding-right: 100px;
+	}
+
+	.bottom h1
+	{
+	    line-height: normal;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+}
+
+@media screen and ( max-width: 768px )  {
+	.form-container
+	{
+		
+	    margin: 85px 40px 0;
+	}
+
+	.details
+	{
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: space-between;
+	}
+
+	.details-item
+	{
+
+	    width: 120px;
+	    height: 190px;
+	    border-right: none;
+	    border-bottom: 1px solid #818181;
+	    justify-content: center;
+
+	}
+}
+
