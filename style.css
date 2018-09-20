@@ -195,7 +195,10 @@ textarea
 {
     color: #1abc9c;
 }
+/* End of details container. */
 
+
+/* Bottom div container. */
 .bottom
 {
     -webkit-box-sizing: border-box;
@@ -228,6 +231,7 @@ textarea
 
     text-decoration: none;
 }
+/* End of bottom div container. */
 
 
 /* Media Queries*/
