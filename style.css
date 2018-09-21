@@ -130,6 +130,10 @@ textarea
     border-radius: 2px;
 }
 
+iframe {
+	border: 0;
+}
+
 #googleMap {
 	width: 42.2%;
 	height: 467px;
