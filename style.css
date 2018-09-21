@@ -69,8 +69,8 @@ form
     display: flex;
     flex-direction: column;
 
-    width: 625px;
-    height: 470px;
+    width: 56.5%;
+    min-height: 470px;
 
     justify-content: space-between;
 }
@@ -131,12 +131,17 @@ textarea
 }
 
 #googleMap {
-	width: 467px;
+	width: 42.2%;
 	height: 467px;
 	border: 1px solid #ccc;
     border-radius: 2px;
     overflow: hidden;
     margin-left: 45px;
+}
+
+.details-wrapper {
+	width: 100%;
+	background-color: #f7f7f7;
 }
 
 .details
@@ -146,14 +151,12 @@ textarea
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    width: 100%;
+    width: 86.8%;
     min-height: 223px;
-    margin-top: 57px;
+    margin: 57px auto 0;
     padding: 50px 0;
 
-    background-color: #f7f7f7;
-
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .details-item
@@ -161,7 +164,7 @@ textarea
     display: flex;
     flex-direction: column;
 
-    min-width: 390px;
+    width: 33.33%;
     height: 123px;
 
     text-align: center;
@@ -304,6 +307,20 @@ textarea
 	{
 		
 	    margin: 85px 40px 0;
+	}
+
+	form {
+		height: 520px;
+	}
+
+	.row-inputs
+	{
+	    flex-direction: column;
+	}
+
+	.row-inputs input:first-child
+	{
+	    margin-bottom: 16px;
 	}
 
 	.details
