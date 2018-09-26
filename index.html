@@ -1,81 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Adsy Test</title>
-	<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Adsy Test</title>
+		<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<footer>
-		<div class="footer-wrapper">
 
-			<!-- Contact Icon -->
-			<div class="contact">
-				<img src="images/footer-icon.png" alt="Contact Us">
-			</div>
+	<!-- <img class="bgim" src="images/site_footer.png" alt=""> -->
 
-			<!-- Titles -->
-			<div class="titles">
-				<h4>Contact Us</h4>
-				<h1>Say <u>Hello!</u></h1>
-			</div>
-			
+	<!-- Wrapper for all content on the page. -->
+	<div class="wrapper">
 
-			<!-- Contact Form -->
-			<div class="form-container">
-				<form action="#">
-					<div class="row-inputs">
-						<input type="text" placeholder="Your Name">
-						<input type="email" placeholder="Your Email">
-					</div>
-					<input type="text" placeholder="Subject">
-					<textarea placeholder="Your Message"></textarea>
-					<input type="submit" value="Send Message">
-				</form>
-				<div id="googleMap">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96552.93908669688!2d30.644801525722336!3d50.51148466786837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1537476658345"
-					 width="100%" height="100%" frameborder="0" allowfullscreen>
+			<!-- Header content. -->
+			<header class="header-content">
+
+				<!-- Page top/main icon. -->
+				<img class="header-content__icon" src="images/footer-icon.png" alt="Contact Us">
+				
+
+				<!-- Header titles -->
+				<p class="header-content__title">Contact Us</p>
+				<h1 class="header-content__main-title">Say <span class="header-content__main-title_color_teal">Hello!!</span></h1>
+
+			</header>
+			<!-- End of header section. -->
+
+
+			<!-- Main content section. -->
+			<main class="main-content">
+
+				<!-- Contact form container/wrapper. -->
+				<div class="form-map-wrapper">
+					
+					<!-- Contact form block. -->
+					<form class="contact-form" action="#">
+
+						<!-- Row inputs on big screens. -->
+						<div class="contact-form__input-content">
+
+							<label class="contact-form__label" for="userName">Enter your name</label>
+							<input class="contact-form__input" type="text" placeholder="Your Name" id="userName">
+
+							<label class="contact-form__label" for="userEmail">Enter your email</label>
+							<input class="contact-form__input" type="email" placeholder="Email" id="userEmail">
+
+						</div>
+
+						<!-- Contact form input fieald for lastname. -->
+						<label class="contact-form__label" for="userLastname">Enter your lastname</label>
+						<input class="contact-form__input" type="text" placeholder="Subject" id="userLastname">
+
+						<!-- Contact form text area. -->
+						<textarea class="contact-form__textarea" placeholder="Your Message"></textarea>
+
+						<!-- Contact form submit button. -->
+						<input class="contact-form__submit-button" type="submit" value="Send Message">
+
+					</form>
+					<!-- End of contact form section. -->
+
+
+					<!-- Google map. -->
+					<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96552.93908669688!2d30.644801525722336!3d50.51148466786837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1537476658345"
+					width="100%" height="100%" frameborder="0" allowfullscreen>
 					</iframe>
-				</div>
-			</div>
+					<!-- Google map. -->
+					
 
-			<!-- Contact Details -->
-			<div class="details-wrapper">
-				<div class="details">
-					<div class="details-item">
-						<div class="footer-icon">
-							<img src="images/phone.png" alt="Call Us">
-						</div>
-						<h4>Have a Question?</h4>
-						<p>+1 1234567890</p>
-					</div>
-					<div class="details-item">
-						<div class="footer-icon">
-							<img src="images/clock.png" alt="Working Time">
-						</div>
-						<h4>Open Mon - Fri</h4>
-						<p>08:00am to 8:00pm</p>
-					</div>
-					<div class="details-item">
-						<div class="footer-icon">
-							<img src="images/details-icon.png" alt="Email Us">
-						</div>
-						<h4>Drop Us An Email</h4>
-						<p>help@yourdomain.com</p>
-					</div>
 				</div>
-			</div>
-			
+				<!-- End of section with contact form and google map. -->
 
+				
+				<!-- Contact details container/wrapper. -->
+				<div class="details-wrapper">
+
+					<div class="details">
+
+						<!-- Details item phone. -->
+						<div class="details-item">
+							<div class="details-item__icon">
+								<img class="details-item__image" src="images/phone.png" alt="Call Us">
+							</div>
+
+							<h4 class="details-item__heading">Have a Question?</h4>
+							<a class="details-item__link details-item__link_pointer" href="tel:+1 1234567890">+1 1234567890</a>
+						</div>
+
+						<!-- Details item work time. -->
+						<div class="details-item">
+
+							<div class="details-item__icon">
+								<img class="details-item__image" src="images/clock.png" alt="Working Time">
+							</div>
+
+							<h4 class="details-item__heading">Open Mon - Fri</h4>
+							<p class="details-item__paragraph">08:00am to 8:00pm</p>
+						</div>
+
+						<!-- Details item company email. -->
+						<div class="details-item">
+							<div class="details-item__icon">
+								<img class="details-item__image" src="images/details-icon.png" alt="Email Us">
+							</div>
+							<h4 class="details-item__heading">Drop Us An Email</h4>
+							<a class="details-item__link details-item__link_pointer" href="mailto:help@yourdomain.com">help@yourdomain.com</a>
+						</div>
+
+					</div>
+					<!-- End of details block. class="details" -->
+
+				</div>
+				<!-- End of detail items wrapper. class="details-wrapper" -->
+
+			</main>
+			<!-- End of main content section. -->
+
+				
+				
 			<!-- Bottom section. -->
-			<div class="bottom">
-				<h1>Try Our <u>Services</u> Right Now</h1>
-				<p>The most appealing part of the theme it's
-				 very clear and light. And it reveals individual.</p>
-			</div>
+			<footer class="footer-section">
+				<p class="footer-section__title">Try Our <span>Services</span> Right Now</p>
+				<p class="footer-section__paragraph">The most appealing part of the theme it's
+					very clear and light. And it reveals individual.</p>
+			</footer>
+			<!-- Bottom section. -->
+			
+	</div>
+	<!-- End of all content. -->
 
-		</div>
-	</footer>
 </body>
 </html>
